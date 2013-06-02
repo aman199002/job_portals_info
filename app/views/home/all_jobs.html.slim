@@ -1,0 +1,22 @@
+= will_paginate @jobs
+table.table
+  tr
+    th S. No.
+    th Title
+    th Location
+    th Company
+    th Description
+    th Linkedin Description
+    th Size
+
+  - @jobs.each_with_index do |job,index|
+    tr
+      th = index+1
+      td = job.title
+      td = job.location
+      td = job.company
+      td = job.description
+      td = job.linkedin_desc
+      td = job.size
+
+= will_paginate @jobs      

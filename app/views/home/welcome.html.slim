@@ -1,0 +1,20 @@
+div.row-fluid
+  = form_tag home_scrape_path do  
+  
+    div.row-fluid
+  	  div.span3
+  	    = label_tag :url
+  	    = text_field_tag :url, "http://www.indeed.com/jobs", :readonly => true
+  
+    div.row-fluid	
+      div.span3
+  	    = label_tag :keyword
+  	    = text_field_tag :keyword
+
+    div.row-fluid	
+      div.span3
+  	    = label_tag :location
+  	    = text_field_tag :location
+
+    div.row-fluid	
+  	  = submit_tag :submit

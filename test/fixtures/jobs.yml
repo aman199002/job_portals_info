@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  portal_id: 1
+  title: MyString
+  description: MyText
+  location: MyString
+  company: MyString
+
+two:
+  portal_id: 1
+  title: MyString
+  description: MyText
+  location: MyString
+  company: MyString
