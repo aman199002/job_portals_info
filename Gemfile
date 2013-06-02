@@ -18,6 +18,10 @@ gem 'nokogiri'
 gem 'will_paginate'
 gem 'heroku'
 
+group :production do
+  gem 'pg'	
+end	
+
 group :development, :test do
   gem 'debugger'
 end
