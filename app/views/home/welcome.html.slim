@@ -4,7 +4,7 @@ div.row-fluid
     div.row-fluid
   	  div.span3
   	    = label_tag :url
-  	    = text_field_tag :url, "http://www.indeed.com/jobs", :readonly => true
+  	    = select_tag :url, options_for_select(["http://www.indeed.com/jobs", "http://jobsearch.monster.com/search"])       
   
     div.row-fluid	
       div.span3
@@ -16,5 +16,10 @@ div.row-fluid
   	    = label_tag :location
   	    = text_field_tag :location
 
-    div.row-fluid	
+    div.row-fluid 
+      div.span3
+        = label_tag :no_of_jobs
+        = text_field_tag :jobs_count
+
+    div.row-fluid
   	  = submit_tag :submit
